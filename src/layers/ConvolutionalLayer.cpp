@@ -1,6 +1,6 @@
-#include "ConvolutionalLayer.h"
-#include "MatrixUtils.h"
-#include "ReLU.h"
+#include "layers/ConvolutionalLayer.h"
+#include "utils/MatrixUtils.h"
+#include "utils/activationFunctions/ReLU.h"
 
 ConvolutionalLayer::ConvolutionalLayer(int filterSize, int numFilters, int stride, ActivationFunction* activationFunction)
     : filterSize(filterSize), numFilters(numFilters), stride(stride), activationFunction(activationFunction) {}

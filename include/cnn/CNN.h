@@ -1,10 +1,10 @@
 #ifndef CNN_H
 #define CNN_H
 
-#include "Layer.h"
-#include "AdaptiveLayer.h"
-#include "ParameterizedLayer.h"
-#include "ImageData.h"
+#include "interfaces/Layer.h"
+#include "interfaces/AdaptiveLayer.h"
+#include "interfaces/ParameterizedLayer.h"
+#include "utils/ImageData.h"
 #include <vector>
 #include <string>
 #include <memory>

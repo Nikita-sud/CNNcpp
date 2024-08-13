@@ -1,9 +1,9 @@
 #ifndef CONVOLUTIONAL_LAYER_H
 #define CONVOLUTIONAL_LAYER_H
 
-#include "ActivationFunction.h"
-#include "AdaptiveLayer.h"
-#include "ParameterizedLayer.h"
+#include "interfaces/ActivationFunction.h"
+#include "interfaces/AdaptiveLayer.h"
+#include "interfaces/ParameterizedLayer.h"
 #include <vector>
 #include <random>
 

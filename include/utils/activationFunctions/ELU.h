@@ -1,7 +1,7 @@
 #ifndef ELU_H
 #define ELU_H
 
-#include "ActivationFunction.h"
+#include "interfaces/ActivationFunction.h"
 
 class ELU : public ActivationFunction {
 public:

@@ -1,7 +1,7 @@
 #ifndef PARAMETERIZED_LAYER_H
 #define PARAMETERIZED_LAYER_H
 
-#include "Layer.h"
+#include "interfaces/Layer.h"
 
 class ParameterizedLayer : public Layer {
 public:

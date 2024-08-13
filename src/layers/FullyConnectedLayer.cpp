@@ -1,5 +1,5 @@
-#include "FullyConnectedLayer.h"
-#include "MatrixUtils.h"
+#include "layers/FullyConnectedLayer.h"
+#include "utils/MatrixUtils.h"
 
 FullyConnectedLayer::FullyConnectedLayer(int outputSize, ActivationFunction* activationFunction)
     : outputSize(outputSize), activationFunction(activationFunction) {}

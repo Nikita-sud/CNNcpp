@@ -1,7 +1,7 @@
 #ifndef ADAPTIVE_LAYER_H
 #define ADAPTIVE_LAYER_H
 
-#include "Layer.h"
+#include "interfaces/Layer.h"
 #include <vector>
 #include <stdexcept>
 

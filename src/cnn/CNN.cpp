@@ -1,4 +1,4 @@
-#include "CNN.h"
+#include "cnn/CNN.h"
 #include <random> 
 
 CNN::CNN(double learningRate, const std::vector<int>& inputShape)

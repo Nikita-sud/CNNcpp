@@ -1,4 +1,4 @@
-#include "ReLU.h"
+#include "utils/activationFunctions/ReLU.h"
 #include <algorithm>
 
 double ReLU::activate(double x) const {

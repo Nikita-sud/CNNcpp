@@ -1,4 +1,4 @@
-#include "ELU.h"
+#include "utils/activationFunctions/ELU.h"
 #include <cmath>
 
 ELU::ELU(double alpha) : alpha(alpha) {}

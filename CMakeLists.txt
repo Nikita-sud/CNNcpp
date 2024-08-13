@@ -1,16 +1,19 @@
-# CMakeLists.txt
-
 cmake_minimum_required(VERSION 3.10)
-project(CNNProject)
+project(CNNcpp)
 
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Define the sources
 set(SOURCES
     src/main.cpp
+    src/cnn/CNN.cpp
+    src/cnn/MNISTReader.cpp
     src/layers/ConvolutionalLayer.cpp
-    src/interfaces/Layer.cpp
+    src/utils/MatrixUtils.cpp
+    src/utils/ImageData.cpp        # Ensure this is added
+    src/utils/activationFunctions/ReLU.cpp             # Ensure this is added
     # Add other source files here
 )
 
@@ -18,10 +21,12 @@ set(SOURCES
 include_directories(include)
 
 # Add executable
-add_executable(CNNProject ${SOURCES})
+add_executable(CNNcpp ${SOURCES})
 
-# Link libraries (e.g., OpenGL, GLEW, etc.)
+# Link libraries (e.g., OpenGL, GLEW, GLUT)
 find_package(OpenGL REQUIRED)
 find_package(GLEW REQUIRED)
 find_package(GLUT REQUIRED)
-target_link_libraries(CNNProject ${OPENGL_LIBRARIES} ${GLEW_LIBRARIES} ${GLUT_LIBRARIES})
+
+# Link the OpenGL, GLEW, and GLUT libraries
+target_link_libraries(CNNcpp OpenGL::GL GLEW::GLEW GLUT::GLUT)

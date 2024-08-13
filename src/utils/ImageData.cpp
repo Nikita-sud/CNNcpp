@@ -1,4 +1,4 @@
-#include "ImageData.h"
+#include "utils/ImageData.h"
 
 ImageData::ImageData(const std::vector<std::vector<std::vector<double>>>& imageData, const std::vector<double>& label)
     : imageData(imageData), label(label) {}

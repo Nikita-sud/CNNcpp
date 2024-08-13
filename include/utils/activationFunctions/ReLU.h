@@ -1,7 +1,7 @@
 #ifndef RELU_H
 #define RELU_H
 
-#include "ActivationFunction.h"
+#include "interfaces/ActivationFunction.h"
 
 class ReLU : public ActivationFunction {
 public:
