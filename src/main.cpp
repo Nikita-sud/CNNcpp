@@ -1,34 +1,50 @@
+#include "cnn/CNN.h"
+#include "layers/ConvolutionalLayer.h"
+#include "layers/FullyConnectedLayer.h"
+#include "layers/FlattenLayer.h"
+#include "layers/SoftmaxLayer.h"
+#include "utils/activationFunctions/ELU.h"
 #include "cnn/MNISTReader.h"
-#include <iostream>
-#include <random>
-#include <algorithm>
+
+template <typename T>
+std::ostream& operator<<(std::ostream& os, const std::vector<T>& vec) {
+    os << "[";
+    for (size_t i = 0; i < vec.size(); ++i) {
+        os << vec[i];
+        if (i != vec.size() - 1) {
+            os << ", ";
+        }
+    }
+    os << "]";
+    return os;
+}
 
 int main() {
-    try {
-        std::string imagesFile = "../data/train-images.idx3-ubyte";
-        std::string labelsFile = "../data/train-labels.idx1-ubyte";
-        std::vector<ImageData> dataset = MNISTReader::readMNISTData(imagesFile, labelsFile);
+    double learningRate = 0.02;
+    CNN cnn(learningRate, {1, 28, 28});
 
-        // Shuffle the dataset
-        std::random_device rd;
-        std::mt19937 g(rd());
-        std::shuffle(dataset.begin(), dataset.end(), g);
+    cnn.addLayer(std::make_shared<FlattenLayer>());
+    cnn.addLayer(std::make_shared<FullyConnectedLayer>(60, std::make_shared<ELU>(1.0)));
+    cnn.addLayer(std::make_shared<FullyConnectedLayer>(10, std::make_shared<ELU>(1.0)));
+    cnn.addLayer(std::make_shared<SoftmaxLayer>());
 
-        // Print the first image and label
-        const auto& imageData = dataset[0].getImageData();
-        const auto& label = dataset[0].getLabel();
+    cnn.printNetworkSummary();
 
-        for (const auto& row : imageData[0]) {
-            for (double pixel : row) {
-                std::cout << (pixel > 0.5 ? "*" : " ");
-            }
-            std::cout << "\n";
-        }
-        std::cout << "Label: " << std::distance(label.begin(), std::max_element(label.begin(), label.end())) << "\n";
+    std::string trainImagesFile = "../data/train-images.idx3-ubyte";
+    std::string trainLabelsFile = "../data/train-labels.idx1-ubyte";
+    auto trainDataset = MNISTReader::readMNISTData(trainImagesFile, trainLabelsFile);
 
-    } catch (const std::exception& e) {
-        std::cerr << "Error: " << e.what() << "\n";
-    }
+    std::string testImagesFile = "../data/t10k-images.idx3-ubyte";
+    std::string testLabelsFile = "../data/t10k-labels.idx1-ubyte";
+    auto testDataset = MNISTReader::readMNISTData(testImagesFile, testLabelsFile);
+
+    cnn.SGD(trainDataset, 30, 32, testDataset);
+
+    auto input = testDataset[2].getImageData();
+    auto output = cnn.forward(input);
+
+    std::cout << "CNN output: " << output[0][0] << std::endl;
+    std::cout << "Actual output: " << testDataset[2].getLabel() << std::endl;
 
     return 0;
 }

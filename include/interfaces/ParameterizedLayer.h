@@ -3,7 +3,7 @@
 
 #include "interfaces/Layer.h"
 
-class ParameterizedLayer : public Layer {
+class ParameterizedLayer : public virtual Layer {
 public:
     virtual ~ParameterizedLayer() = default;
 

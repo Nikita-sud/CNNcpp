@@ -11,9 +11,13 @@ set(SOURCES
     src/cnn/CNN.cpp
     src/cnn/MNISTReader.cpp
     src/layers/ConvolutionalLayer.cpp
+    src/layers/FlattenLayer.cpp
+    src/layers/FullyConnectedLayer.cpp
+    src/layers/SoftmaxLayer.cpp
     src/utils/MatrixUtils.cpp
-    src/utils/ImageData.cpp        # Ensure this is added
-    src/utils/activationFunctions/ReLU.cpp             # Ensure this is added
+    src/utils/ImageData.cpp
+    src/utils/activationFunctions/ReLU.cpp
+    src/utils/activationFunctions/ELU.cpp  
     # Add other source files here
 )
 
@@ -23,10 +27,11 @@ include_directories(include)
 # Add executable
 add_executable(CNNcpp ${SOURCES})
 
-# Link libraries (e.g., OpenGL, GLEW, GLUT)
-find_package(OpenGL REQUIRED)
-find_package(GLEW REQUIRED)
-find_package(GLUT REQUIRED)
+# Link Metal framework
+find_library(METAL Metal)
+find_library(METALKIT MetalKit)
 
-# Link the OpenGL, GLEW, and GLUT libraries
-target_link_libraries(CNNcpp OpenGL::GL GLEW::GLEW GLUT::GLUT)
+target_link_libraries(CNNcpp ${METAL} ${METALKIT})
+
+# If you have any Metal shader sources, you can add them using:
+# set_source_files_properties(shaders/your_shader.metal PROPERTIES LANGUAGE METAL)

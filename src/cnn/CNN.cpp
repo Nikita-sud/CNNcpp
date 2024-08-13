@@ -1,8 +1,8 @@
 #include "cnn/CNN.h"
 #include <random> 
 
-CNN::CNN(double learningRate, const std::vector<int>& inputShape)
-    : learningRate(learningRate), inputShape(inputShape) {}
+CNN::CNN(double learningRate, std::initializer_list<int> inputShape)
+    : learningRate(learningRate), inputShape(inputShape.begin(), inputShape.end()) {}
 
 void CNN::addLayer(std::shared_ptr<Layer> layer) {
     std::vector<int> currentShape = inputShape;
@@ -86,7 +86,6 @@ void CNN::SGD(const std::vector<ImageData>& trainingData, int epochs, int miniBa
     for (int epoch = 0; epoch < epochs; ++epoch) {
         auto shuffledData = trainingData;
         
-        // Use std::shuffle instead of std::random_shuffle
         std::random_device rd;
         std::mt19937 g(rd());
         std::shuffle(shuffledData.begin(), shuffledData.end(), g);

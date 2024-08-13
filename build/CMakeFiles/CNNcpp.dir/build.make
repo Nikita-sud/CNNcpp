@@ -125,10 +125,52 @@ CMakeFiles/CNNcpp.dir/src/layers/ConvolutionalLayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNNcpp.dir/src/layers/ConvolutionalLayer.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nichitabulgaru/Documents/CNNcpp/src/layers/ConvolutionalLayer.cpp -o CMakeFiles/CNNcpp.dir/src/layers/ConvolutionalLayer.cpp.s
 
+CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.o: CMakeFiles/CNNcpp.dir/flags.make
+CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.o: /Users/nichitabulgaru/Documents/CNNcpp/src/layers/FlattenLayer.cpp
+CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.o: CMakeFiles/CNNcpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nichitabulgaru/Documents/CNNcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.o -MF CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.o.d -o CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.o -c /Users/nichitabulgaru/Documents/CNNcpp/src/layers/FlattenLayer.cpp
+
+CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nichitabulgaru/Documents/CNNcpp/src/layers/FlattenLayer.cpp > CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.i
+
+CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nichitabulgaru/Documents/CNNcpp/src/layers/FlattenLayer.cpp -o CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.s
+
+CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.o: CMakeFiles/CNNcpp.dir/flags.make
+CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.o: /Users/nichitabulgaru/Documents/CNNcpp/src/layers/FullyConnectedLayer.cpp
+CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.o: CMakeFiles/CNNcpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nichitabulgaru/Documents/CNNcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.o -MF CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.o.d -o CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.o -c /Users/nichitabulgaru/Documents/CNNcpp/src/layers/FullyConnectedLayer.cpp
+
+CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nichitabulgaru/Documents/CNNcpp/src/layers/FullyConnectedLayer.cpp > CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.i
+
+CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nichitabulgaru/Documents/CNNcpp/src/layers/FullyConnectedLayer.cpp -o CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.s
+
+CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.o: CMakeFiles/CNNcpp.dir/flags.make
+CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.o: /Users/nichitabulgaru/Documents/CNNcpp/src/layers/SoftmaxLayer.cpp
+CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.o: CMakeFiles/CNNcpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nichitabulgaru/Documents/CNNcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.o -MF CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.o.d -o CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.o -c /Users/nichitabulgaru/Documents/CNNcpp/src/layers/SoftmaxLayer.cpp
+
+CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nichitabulgaru/Documents/CNNcpp/src/layers/SoftmaxLayer.cpp > CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.i
+
+CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nichitabulgaru/Documents/CNNcpp/src/layers/SoftmaxLayer.cpp -o CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.s
+
 CMakeFiles/CNNcpp.dir/src/utils/MatrixUtils.cpp.o: CMakeFiles/CNNcpp.dir/flags.make
 CMakeFiles/CNNcpp.dir/src/utils/MatrixUtils.cpp.o: /Users/nichitabulgaru/Documents/CNNcpp/src/utils/MatrixUtils.cpp
 CMakeFiles/CNNcpp.dir/src/utils/MatrixUtils.cpp.o: CMakeFiles/CNNcpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nichitabulgaru/Documents/CNNcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CNNcpp.dir/src/utils/MatrixUtils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nichitabulgaru/Documents/CNNcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/CNNcpp.dir/src/utils/MatrixUtils.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNNcpp.dir/src/utils/MatrixUtils.cpp.o -MF CMakeFiles/CNNcpp.dir/src/utils/MatrixUtils.cpp.o.d -o CMakeFiles/CNNcpp.dir/src/utils/MatrixUtils.cpp.o -c /Users/nichitabulgaru/Documents/CNNcpp/src/utils/MatrixUtils.cpp
 
 CMakeFiles/CNNcpp.dir/src/utils/MatrixUtils.cpp.i: cmake_force
@@ -142,7 +184,7 @@ CMakeFiles/CNNcpp.dir/src/utils/MatrixUtils.cpp.s: cmake_force
 CMakeFiles/CNNcpp.dir/src/utils/ImageData.cpp.o: CMakeFiles/CNNcpp.dir/flags.make
 CMakeFiles/CNNcpp.dir/src/utils/ImageData.cpp.o: /Users/nichitabulgaru/Documents/CNNcpp/src/utils/ImageData.cpp
 CMakeFiles/CNNcpp.dir/src/utils/ImageData.cpp.o: CMakeFiles/CNNcpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nichitabulgaru/Documents/CNNcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CNNcpp.dir/src/utils/ImageData.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nichitabulgaru/Documents/CNNcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CNNcpp.dir/src/utils/ImageData.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNNcpp.dir/src/utils/ImageData.cpp.o -MF CMakeFiles/CNNcpp.dir/src/utils/ImageData.cpp.o.d -o CMakeFiles/CNNcpp.dir/src/utils/ImageData.cpp.o -c /Users/nichitabulgaru/Documents/CNNcpp/src/utils/ImageData.cpp
 
 CMakeFiles/CNNcpp.dir/src/utils/ImageData.cpp.i: cmake_force
@@ -156,7 +198,7 @@ CMakeFiles/CNNcpp.dir/src/utils/ImageData.cpp.s: cmake_force
 CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ReLU.cpp.o: CMakeFiles/CNNcpp.dir/flags.make
 CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ReLU.cpp.o: /Users/nichitabulgaru/Documents/CNNcpp/src/utils/activationFunctions/ReLU.cpp
 CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ReLU.cpp.o: CMakeFiles/CNNcpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nichitabulgaru/Documents/CNNcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ReLU.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nichitabulgaru/Documents/CNNcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ReLU.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ReLU.cpp.o -MF CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ReLU.cpp.o.d -o CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ReLU.cpp.o -c /Users/nichitabulgaru/Documents/CNNcpp/src/utils/activationFunctions/ReLU.cpp
 
 CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ReLU.cpp.i: cmake_force
@@ -167,15 +209,33 @@ CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ReLU.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ReLU.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nichitabulgaru/Documents/CNNcpp/src/utils/activationFunctions/ReLU.cpp -o CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ReLU.cpp.s
 
+CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.o: CMakeFiles/CNNcpp.dir/flags.make
+CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.o: /Users/nichitabulgaru/Documents/CNNcpp/src/utils/activationFunctions/ELU.cpp
+CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.o: CMakeFiles/CNNcpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nichitabulgaru/Documents/CNNcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.o -MF CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.o.d -o CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.o -c /Users/nichitabulgaru/Documents/CNNcpp/src/utils/activationFunctions/ELU.cpp
+
+CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nichitabulgaru/Documents/CNNcpp/src/utils/activationFunctions/ELU.cpp > CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.i
+
+CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nichitabulgaru/Documents/CNNcpp/src/utils/activationFunctions/ELU.cpp -o CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.s
+
 # Object files for target CNNcpp
 CNNcpp_OBJECTS = \
 "CMakeFiles/CNNcpp.dir/src/main.cpp.o" \
 "CMakeFiles/CNNcpp.dir/src/cnn/CNN.cpp.o" \
 "CMakeFiles/CNNcpp.dir/src/cnn/MNISTReader.cpp.o" \
 "CMakeFiles/CNNcpp.dir/src/layers/ConvolutionalLayer.cpp.o" \
+"CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.o" \
+"CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.o" \
+"CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.o" \
 "CMakeFiles/CNNcpp.dir/src/utils/MatrixUtils.cpp.o" \
 "CMakeFiles/CNNcpp.dir/src/utils/ImageData.cpp.o" \
-"CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ReLU.cpp.o"
+"CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ReLU.cpp.o" \
+"CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.o"
 
 # External object files for target CNNcpp
 CNNcpp_EXTERNAL_OBJECTS =
@@ -184,16 +244,20 @@ CNNcpp: CMakeFiles/CNNcpp.dir/src/main.cpp.o
 CNNcpp: CMakeFiles/CNNcpp.dir/src/cnn/CNN.cpp.o
 CNNcpp: CMakeFiles/CNNcpp.dir/src/cnn/MNISTReader.cpp.o
 CNNcpp: CMakeFiles/CNNcpp.dir/src/layers/ConvolutionalLayer.cpp.o
+CNNcpp: CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.o
+CNNcpp: CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.o
+CNNcpp: CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.o
 CNNcpp: CMakeFiles/CNNcpp.dir/src/utils/MatrixUtils.cpp.o
 CNNcpp: CMakeFiles/CNNcpp.dir/src/utils/ImageData.cpp.o
 CNNcpp: CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ReLU.cpp.o
+CNNcpp: CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.o
 CNNcpp: CMakeFiles/CNNcpp.dir/build.make
 CNNcpp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework
 CNNcpp: /opt/homebrew/lib/libGLEW.2.2.0.dylib
 CNNcpp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/GLUT.framework
 CNNcpp: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/Cocoa.framework
 CNNcpp: CMakeFiles/CNNcpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nichitabulgaru/Documents/CNNcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable CNNcpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nichitabulgaru/Documents/CNNcpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable CNNcpp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CNNcpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

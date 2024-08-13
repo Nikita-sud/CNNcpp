@@ -12,10 +12,11 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <initializer_list>
 
 class CNN {
 public:
-    CNN(double learningRate, const std::vector<int>& inputShape);
+    CNN(double learningRate, std::initializer_list<int> inputShape);
 
     void addLayer(std::shared_ptr<Layer> layer);
     std::vector<std::vector<std::vector<double>>> forward(const std::vector<std::vector<std::vector<double>>>& input);

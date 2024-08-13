@@ -5,7 +5,7 @@
 #include <vector>
 #include <stdexcept>
 
-class AdaptiveLayer : public Layer {
+class AdaptiveLayer : public virtual Layer {
 public:
     virtual ~AdaptiveLayer() = default;
 

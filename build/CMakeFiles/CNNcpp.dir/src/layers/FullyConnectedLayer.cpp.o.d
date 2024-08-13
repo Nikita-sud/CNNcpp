@@ -1,6 +1,8 @@
-CMakeFiles/CNNcpp.dir/src/layers/ConvolutionalLayer.cpp.o: \
-  /Users/nichitabulgaru/Documents/CNNcpp/src/layers/ConvolutionalLayer.cpp \
-  /Users/nichitabulgaru/Documents/CNNcpp/include/layers/ConvolutionalLayer.h \
+CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.o: \
+  /Users/nichitabulgaru/Documents/CNNcpp/src/layers/FullyConnectedLayer.cpp \
+  /Users/nichitabulgaru/Documents/CNNcpp/include/layers/FullyConnectedLayer.h \
+  /Users/nichitabulgaru/Documents/CNNcpp/include/interfaces/AdaptiveLayer.h \
+  /Users/nichitabulgaru/Documents/CNNcpp/include/interfaces/Layer.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/copy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/copy_move_common.h \
@@ -846,6 +848,8 @@ CMakeFiles/CNNcpp.dir/src/layers/ConvolutionalLayer.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstdarg \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/temp_value.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__split_buffer \
+  /Users/nichitabulgaru/Documents/CNNcpp/include/interfaces/ParameterizedLayer.h \
+  /Users/nichitabulgaru/Documents/CNNcpp/include/interfaces/ActivationFunction.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/random \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/bernoulli_distribution.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h \
@@ -919,13 +923,4 @@ CMakeFiles/CNNcpp.dir/src/layers/ConvolutionalLayer.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/seed_seq.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/student_t_distribution.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
-  /Users/nichitabulgaru/Documents/CNNcpp/include/interfaces/ActivationFunction.h \
-  /Users/nichitabulgaru/Documents/CNNcpp/include/interfaces/AdaptiveLayer.h \
-  /Users/nichitabulgaru/Documents/CNNcpp/include/interfaces/Layer.h \
-  /Users/nichitabulgaru/Documents/CNNcpp/include/interfaces/ParameterizedLayer.h \
-  /Users/nichitabulgaru/Documents/CNNcpp/include/utils/MatrixUtils.h \
-  /Users/nichitabulgaru/Documents/CNNcpp/include/utils/activationFunctions/ReLU.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ostream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/bitset
+  /Users/nichitabulgaru/Documents/CNNcpp/include/utils/MatrixUtils.h

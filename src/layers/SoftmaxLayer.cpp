@@ -26,8 +26,8 @@ std::vector<double> SoftmaxLayer::softmax(const std::vector<double>& input) {
     return output;
 }
 
-std::vector<std::vector<std::vector<double>>> SoftmaxLayer::backward(const std::vector<std::vector<std::vector<double>>>& gradient) {
-    return gradient;
+std::vector<std::vector<std::vector<double>>> SoftmaxLayer::backward(std::vector<std::vector<std::vector<double>>> gradient) {
+    return gradient;  // Normally you'd compute the gradient for softmax here
 }
 
 std::vector<int> SoftmaxLayer::getOutputShape(const std::vector<int>& inputShape) {

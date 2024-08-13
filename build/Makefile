@@ -201,6 +201,78 @@ src/layers/ConvolutionalLayer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNcpp.dir/build.make CMakeFiles/CNNcpp.dir/src/layers/ConvolutionalLayer.cpp.s
 .PHONY : src/layers/ConvolutionalLayer.cpp.s
 
+src/layers/FlattenLayer.o: src/layers/FlattenLayer.cpp.o
+.PHONY : src/layers/FlattenLayer.o
+
+# target to build an object file
+src/layers/FlattenLayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNcpp.dir/build.make CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.o
+.PHONY : src/layers/FlattenLayer.cpp.o
+
+src/layers/FlattenLayer.i: src/layers/FlattenLayer.cpp.i
+.PHONY : src/layers/FlattenLayer.i
+
+# target to preprocess a source file
+src/layers/FlattenLayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNcpp.dir/build.make CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.i
+.PHONY : src/layers/FlattenLayer.cpp.i
+
+src/layers/FlattenLayer.s: src/layers/FlattenLayer.cpp.s
+.PHONY : src/layers/FlattenLayer.s
+
+# target to generate assembly for a file
+src/layers/FlattenLayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNcpp.dir/build.make CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.s
+.PHONY : src/layers/FlattenLayer.cpp.s
+
+src/layers/FullyConnectedLayer.o: src/layers/FullyConnectedLayer.cpp.o
+.PHONY : src/layers/FullyConnectedLayer.o
+
+# target to build an object file
+src/layers/FullyConnectedLayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNcpp.dir/build.make CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.o
+.PHONY : src/layers/FullyConnectedLayer.cpp.o
+
+src/layers/FullyConnectedLayer.i: src/layers/FullyConnectedLayer.cpp.i
+.PHONY : src/layers/FullyConnectedLayer.i
+
+# target to preprocess a source file
+src/layers/FullyConnectedLayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNcpp.dir/build.make CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.i
+.PHONY : src/layers/FullyConnectedLayer.cpp.i
+
+src/layers/FullyConnectedLayer.s: src/layers/FullyConnectedLayer.cpp.s
+.PHONY : src/layers/FullyConnectedLayer.s
+
+# target to generate assembly for a file
+src/layers/FullyConnectedLayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNcpp.dir/build.make CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.s
+.PHONY : src/layers/FullyConnectedLayer.cpp.s
+
+src/layers/SoftmaxLayer.o: src/layers/SoftmaxLayer.cpp.o
+.PHONY : src/layers/SoftmaxLayer.o
+
+# target to build an object file
+src/layers/SoftmaxLayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNcpp.dir/build.make CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.o
+.PHONY : src/layers/SoftmaxLayer.cpp.o
+
+src/layers/SoftmaxLayer.i: src/layers/SoftmaxLayer.cpp.i
+.PHONY : src/layers/SoftmaxLayer.i
+
+# target to preprocess a source file
+src/layers/SoftmaxLayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNcpp.dir/build.make CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.i
+.PHONY : src/layers/SoftmaxLayer.cpp.i
+
+src/layers/SoftmaxLayer.s: src/layers/SoftmaxLayer.cpp.s
+.PHONY : src/layers/SoftmaxLayer.s
+
+# target to generate assembly for a file
+src/layers/SoftmaxLayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNcpp.dir/build.make CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.s
+.PHONY : src/layers/SoftmaxLayer.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -273,6 +345,30 @@ src/utils/MatrixUtils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNcpp.dir/build.make CMakeFiles/CNNcpp.dir/src/utils/MatrixUtils.cpp.s
 .PHONY : src/utils/MatrixUtils.cpp.s
 
+src/utils/activationFunctions/ELU.o: src/utils/activationFunctions/ELU.cpp.o
+.PHONY : src/utils/activationFunctions/ELU.o
+
+# target to build an object file
+src/utils/activationFunctions/ELU.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNcpp.dir/build.make CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.o
+.PHONY : src/utils/activationFunctions/ELU.cpp.o
+
+src/utils/activationFunctions/ELU.i: src/utils/activationFunctions/ELU.cpp.i
+.PHONY : src/utils/activationFunctions/ELU.i
+
+# target to preprocess a source file
+src/utils/activationFunctions/ELU.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNcpp.dir/build.make CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.i
+.PHONY : src/utils/activationFunctions/ELU.cpp.i
+
+src/utils/activationFunctions/ELU.s: src/utils/activationFunctions/ELU.cpp.s
+.PHONY : src/utils/activationFunctions/ELU.s
+
+# target to generate assembly for a file
+src/utils/activationFunctions/ELU.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CNNcpp.dir/build.make CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.s
+.PHONY : src/utils/activationFunctions/ELU.cpp.s
+
 src/utils/activationFunctions/ReLU.o: src/utils/activationFunctions/ReLU.cpp.o
 .PHONY : src/utils/activationFunctions/ReLU.o
 
@@ -315,6 +411,15 @@ help:
 	@echo "... src/layers/ConvolutionalLayer.o"
 	@echo "... src/layers/ConvolutionalLayer.i"
 	@echo "... src/layers/ConvolutionalLayer.s"
+	@echo "... src/layers/FlattenLayer.o"
+	@echo "... src/layers/FlattenLayer.i"
+	@echo "... src/layers/FlattenLayer.s"
+	@echo "... src/layers/FullyConnectedLayer.o"
+	@echo "... src/layers/FullyConnectedLayer.i"
+	@echo "... src/layers/FullyConnectedLayer.s"
+	@echo "... src/layers/SoftmaxLayer.o"
+	@echo "... src/layers/SoftmaxLayer.i"
+	@echo "... src/layers/SoftmaxLayer.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -324,6 +429,9 @@ help:
 	@echo "... src/utils/MatrixUtils.o"
 	@echo "... src/utils/MatrixUtils.i"
 	@echo "... src/utils/MatrixUtils.s"
+	@echo "... src/utils/activationFunctions/ELU.o"
+	@echo "... src/utils/activationFunctions/ELU.i"
+	@echo "... src/utils/activationFunctions/ELU.s"
 	@echo "... src/utils/activationFunctions/ReLU.o"
 	@echo "... src/utils/activationFunctions/ReLU.i"
 	@echo "... src/utils/activationFunctions/ReLU.s"

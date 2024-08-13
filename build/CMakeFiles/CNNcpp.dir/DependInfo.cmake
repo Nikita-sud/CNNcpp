@@ -11,9 +11,13 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/nichitabulgaru/Documents/CNNcpp/src/cnn/CNN.cpp" "CMakeFiles/CNNcpp.dir/src/cnn/CNN.cpp.o" "gcc" "CMakeFiles/CNNcpp.dir/src/cnn/CNN.cpp.o.d"
   "/Users/nichitabulgaru/Documents/CNNcpp/src/cnn/MNISTReader.cpp" "CMakeFiles/CNNcpp.dir/src/cnn/MNISTReader.cpp.o" "gcc" "CMakeFiles/CNNcpp.dir/src/cnn/MNISTReader.cpp.o.d"
   "/Users/nichitabulgaru/Documents/CNNcpp/src/layers/ConvolutionalLayer.cpp" "CMakeFiles/CNNcpp.dir/src/layers/ConvolutionalLayer.cpp.o" "gcc" "CMakeFiles/CNNcpp.dir/src/layers/ConvolutionalLayer.cpp.o.d"
+  "/Users/nichitabulgaru/Documents/CNNcpp/src/layers/FlattenLayer.cpp" "CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.o" "gcc" "CMakeFiles/CNNcpp.dir/src/layers/FlattenLayer.cpp.o.d"
+  "/Users/nichitabulgaru/Documents/CNNcpp/src/layers/FullyConnectedLayer.cpp" "CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.o" "gcc" "CMakeFiles/CNNcpp.dir/src/layers/FullyConnectedLayer.cpp.o.d"
+  "/Users/nichitabulgaru/Documents/CNNcpp/src/layers/SoftmaxLayer.cpp" "CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.o" "gcc" "CMakeFiles/CNNcpp.dir/src/layers/SoftmaxLayer.cpp.o.d"
   "/Users/nichitabulgaru/Documents/CNNcpp/src/main.cpp" "CMakeFiles/CNNcpp.dir/src/main.cpp.o" "gcc" "CMakeFiles/CNNcpp.dir/src/main.cpp.o.d"
   "/Users/nichitabulgaru/Documents/CNNcpp/src/utils/ImageData.cpp" "CMakeFiles/CNNcpp.dir/src/utils/ImageData.cpp.o" "gcc" "CMakeFiles/CNNcpp.dir/src/utils/ImageData.cpp.o.d"
   "/Users/nichitabulgaru/Documents/CNNcpp/src/utils/MatrixUtils.cpp" "CMakeFiles/CNNcpp.dir/src/utils/MatrixUtils.cpp.o" "gcc" "CMakeFiles/CNNcpp.dir/src/utils/MatrixUtils.cpp.o.d"
+  "/Users/nichitabulgaru/Documents/CNNcpp/src/utils/activationFunctions/ELU.cpp" "CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.o" "gcc" "CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ELU.cpp.o.d"
   "/Users/nichitabulgaru/Documents/CNNcpp/src/utils/activationFunctions/ReLU.cpp" "CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ReLU.cpp.o" "gcc" "CMakeFiles/CNNcpp.dir/src/utils/activationFunctions/ReLU.cpp.o.d"
   )
 

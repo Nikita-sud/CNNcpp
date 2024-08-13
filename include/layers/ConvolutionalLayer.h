@@ -1,21 +1,23 @@
 #ifndef CONVOLUTIONAL_LAYER_H
 #define CONVOLUTIONAL_LAYER_H
 
+#include <vector>
+#include <memory>
+#include <random>
 #include "interfaces/ActivationFunction.h"
 #include "interfaces/AdaptiveLayer.h"
 #include "interfaces/ParameterizedLayer.h"
-#include <vector>
-#include <random>
+#include "interfaces/Layer.h"
 
 class ConvolutionalLayer : public AdaptiveLayer, public ParameterizedLayer {
 public:
-    ConvolutionalLayer(int filterSize, int numFilters, int stride, ActivationFunction* activationFunction);
-    ConvolutionalLayer(int filterSize, int numFilters, ActivationFunction* activationFunction);
+    ConvolutionalLayer(int filterSize, int numFilters, int stride, std::shared_ptr<ActivationFunction> activationFunction);
+    ConvolutionalLayer(int filterSize, int numFilters, std::shared_ptr<ActivationFunction> activationFunction);
     ConvolutionalLayer(int filterSize, int numFilters);
     
     void initialize(const std::vector<int>& inputShape) override;
     std::vector<std::vector<std::vector<double>>> forward(const std::vector<std::vector<std::vector<double>>>& input) override;
-    std::vector<std::vector<std::vector<double>>> backward(const std::vector<std::vector<std::vector<double>>>& gradient) override;
+    std::vector<std::vector<std::vector<double>>> backward(std::vector<std::vector<std::vector<double>>> gradient) override;
     void updateParameters(double learningRate, int miniBatchSize) override;
     void resetGradients() override;
     std::vector<int> getOutputShape(const std::vector<int>& inputShape) override;
@@ -28,7 +30,7 @@ private:
     std::vector<double> biases;
     std::vector<std::vector<std::vector<double>>> input;
     std::vector<std::vector<std::vector<double>>> activatedOutput;
-    ActivationFunction* activationFunction;
+    std::shared_ptr<ActivationFunction> activationFunction;
     std::vector<std::vector<std::vector<std::vector<double>>>> accumulatedFilterGradients;
     std::vector<double> accumulatedBiasGradients;
 

@@ -1,8 +1,9 @@
 #include "layers/FullyConnectedLayer.h"
 #include "utils/MatrixUtils.h"
+#include <stdexcept>
 
-FullyConnectedLayer::FullyConnectedLayer(int outputSize, ActivationFunction* activationFunction)
-    : outputSize(outputSize), activationFunction(activationFunction) {}
+FullyConnectedLayer::FullyConnectedLayer(int outputSize, std::shared_ptr<ActivationFunction> activationFunction)
+    : outputSize(outputSize), activationFunction(std::move(activationFunction)) {}
 
 void FullyConnectedLayer::initialize(const std::vector<int>& inputShape) {
     if (inputShape.size() != 1) {
@@ -49,7 +50,7 @@ std::vector<std::vector<std::vector<double>>> FullyConnectedLayer::forward(const
     return { { postActivation } };
 }
 
-std::vector<std::vector<std::vector<double>>> FullyConnectedLayer::backward(const std::vector<std::vector<std::vector<double>>>& gradient) {
+std::vector<std::vector<std::vector<double>>> FullyConnectedLayer::backward(std::vector<std::vector<std::vector<double>>> gradient) {
     std::vector<double> postActivationGradient = gradient[0][0];
     std::vector<double> preActivationGradient(outputSize);
 

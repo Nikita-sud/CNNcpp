@@ -1,16 +1,16 @@
 #include "layers/ConvolutionalLayer.h"
 #include "utils/MatrixUtils.h"
 #include "utils/activationFunctions/ReLU.h"
+#include <iostream>
 
-ConvolutionalLayer::ConvolutionalLayer(int filterSize, int numFilters, int stride, ActivationFunction* activationFunction)
+ConvolutionalLayer::ConvolutionalLayer(int filterSize, int numFilters, int stride, std::shared_ptr<ActivationFunction> activationFunction)
     : filterSize(filterSize), numFilters(numFilters), stride(stride), activationFunction(activationFunction) {}
 
-ConvolutionalLayer::ConvolutionalLayer(int filterSize, int numFilters, ActivationFunction* activationFunction)
+ConvolutionalLayer::ConvolutionalLayer(int filterSize, int numFilters, std::shared_ptr<ActivationFunction> activationFunction)
     : ConvolutionalLayer(filterSize, numFilters, 1, activationFunction) {}
 
 ConvolutionalLayer::ConvolutionalLayer(int filterSize, int numFilters)
-    : ConvolutionalLayer(filterSize, numFilters, 1, new ReLU()) {}
-
+    : ConvolutionalLayer(filterSize, numFilters, 1, std::make_shared<ReLU>()) {}
 
 void ConvolutionalLayer::initializeFilters(int inputDepth) {
     std::random_device rd;
@@ -81,33 +81,50 @@ std::vector<std::vector<std::vector<double>>> ConvolutionalLayer::forward(const 
     return activatedOutput;
 }
 
-std::vector<std::vector<std::vector<double>>> ConvolutionalLayer::backward(const std::vector<std::vector<std::vector<double>>>& gradient) {
+std::vector<std::vector<std::vector<double>>> ConvolutionalLayer::backward(std::vector<std::vector<std::vector<double>>> gradient) {
+    if (gradient.empty() || input.empty() || activatedOutput.empty()) {
+        throw std::runtime_error("Invalid input: one or more vectors are empty");
+    }
+
     int inputDepth = input.size();
     int inputSize = input[0].size();
     int outputSize = activatedOutput[0].size();
     std::vector<std::vector<std::vector<double>>> inputGradient(inputDepth, std::vector<std::vector<double>>(inputSize, std::vector<double>(inputSize)));
 
+    // Backpropagation through activation function
     for (int f = 0; f < numFilters; ++f) {
         for (int i = 0; i < outputSize; ++i) {
             for (int j = 0; j < outputSize; ++j) {
-                double grad = gradient[f][i][j] * activationFunction->derivative(activatedOutput[f][i][j]);
-                std::vector<std::vector<double>> gradMatrix = {{grad}}; // Wrap grad in a matrix
-                for (int d = 0; d < inputDepth; ++d) {
-                    // Correctly apply the convolve and fullConvolve functions with the correct types
-                    auto filterGrad = MatrixUtils::convolve(input[d], gradMatrix, stride);
-                    for (int fi = 0; fi < filterSize; ++fi) {
-                        for (int fj = 0; fj < filterSize; ++fj) {
-                            accumulatedFilterGradients[f][d][fi][fj] += filterGrad[fi][fj];
-                        }
-                    }
-                    auto inputGrad = MatrixUtils::fullConvolve(MatrixUtils::rotate180(filters[f][d]), gradMatrix);
-                    for (int ii = 0; ii < inputSize; ++ii) {
-                        for (int jj = 0; jj < inputSize; ++jj) {
-                            inputGradient[d][ii][jj] += inputGrad[ii][jj];
-                        }
-                    }
+                gradient[f][i][j] *= activationFunction->derivative(activatedOutput[f][i][j]);
+            }
+        }
+    }
+
+    // Calculate gradients for filters and inputs
+    for (int f = 0; f < numFilters; ++f) {
+        for (int d = 0; d < inputDepth; ++d) {
+            // Calculate gradient for filters
+            auto filterGrad = MatrixUtils::convolve(input[d], gradient[f], stride);
+            for (int i = 0; i < filterSize; ++i) {
+                for (int j = 0; j < filterSize; ++j) {
+                    accumulatedFilterGradients[f][d][i][j] += filterGrad[i][j];
                 }
-                accumulatedBiasGradients[f] += grad;
+            }
+
+            // Calculate gradient for input
+            auto rotatedFilter = MatrixUtils::rotate180(filters[f][d]);
+            auto inputGrad = MatrixUtils::fullConvolve(rotatedFilter, gradient[f]);
+            for (int i = 0; i < inputSize; ++i) {
+                for (int j = 0; j < inputSize; ++j) {
+                    inputGradient[d][i][j] += inputGrad[i][j];
+                }
+            }
+        }
+
+        // Calculate gradient for biases
+        for (int i = 0; i < outputSize; ++i) {
+            for (int j = 0; j < outputSize; ++j) {
+                accumulatedBiasGradients[f] += gradient[f][i][j];
             }
         }
     }
